@@ -10,4 +10,5 @@ public class SpringMasterFirstApplication {
         SpringApplication.run(SpringMasterFirstApplication.class, args);
     }
 
+
 }
