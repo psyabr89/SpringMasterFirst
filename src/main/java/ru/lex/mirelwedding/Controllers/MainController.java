@@ -1,11 +1,10 @@
 package ru.lex.mirelwedding.Controllers;
 
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 
-public class MainController {
+public class MainController { // Необходимо сделать маппинг и реализацию методов.
     public void AddUsers(String name){
     }
     public void DeleteUsers(String name){
@@ -43,5 +42,6 @@ public class MainController {
 
     }
 //    add database
+    // А где подключение приложения к базе данных?
 
 }
