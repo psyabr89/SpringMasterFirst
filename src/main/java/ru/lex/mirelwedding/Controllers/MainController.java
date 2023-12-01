@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import ru.lex.mirelwedding.Entities.Users;
 import ru.lex.mirelwedding.Repositories.UsersRepository;
 
 @RestController
