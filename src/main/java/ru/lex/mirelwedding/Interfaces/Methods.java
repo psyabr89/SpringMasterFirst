@@ -1,4 +1,4 @@
-package ru.lex.mirelwedding;
+package ru.lex.mirelwedding.Interfaces;
 
 public interface Methods {
     public void AddUsers();
