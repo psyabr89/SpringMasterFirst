@@ -1,4 +1,4 @@
-package ru.lex.mirelwedding;
+package ru.lex.mirelwedding.Interfaces;
 
 public interface Methods { //Данный интерфейс не нужен. Его следует удалить
     public void AddUsers();
