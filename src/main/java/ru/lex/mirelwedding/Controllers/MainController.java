@@ -12,7 +12,7 @@ import ru.lex.mirelwedding.Repositories.UsersRepository;
 public class MainController {
     private UsersRepository usersRepository;
     @GetMapping("get")
-    public Users search(){
+    public Users search() { //Не импортирован Users
         return null;
     }
     @GetMapping("new")
