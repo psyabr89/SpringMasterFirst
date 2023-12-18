@@ -1,4 +1,4 @@
-package ru.lex.mirelwedding.Entities;
+package ru.lex.mirelwedding.Entities.Users;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

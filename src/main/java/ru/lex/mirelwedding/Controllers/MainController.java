@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.lex.mirelwedding.Entities.Users;
+import ru.lex.mirelwedding.Entities.Users.Users;
 import ru.lex.mirelwedding.Repositories.UsersRepository;
 
 @RestController
@@ -12,17 +12,17 @@ import ru.lex.mirelwedding.Repositories.UsersRepository;
 @RequestMapping("test")
 public class MainController {
     private UsersRepository usersRepository;
-    @GetMapping("get")
+    @GetMapping("getUser")
     public Users search(){
 
         return usersRepository.findByName("Grigoriy");
     }
-    @GetMapping("new")
+    @GetMapping("newUser")
     public void newUser(){
         Users user = new Users(1,"Vasily", 28, "89656886543", true, 31);
         usersRepository.save(user);
     }
-    @GetMapping("edit")
+    @GetMapping("editUser")
     public void edit(){
         Users user = usersRepository.getReferenceById(1);
         user.setName("Grigoriy");
