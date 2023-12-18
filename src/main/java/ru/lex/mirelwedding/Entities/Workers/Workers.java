@@ -1,4 +1,4 @@
-package ru.lex.mirelwedding.Entities;
+package ru.lex.mirelwedding.Entities.Workers;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -12,8 +12,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Admin {
-
+public class Workers {
     @Id
     Integer id;
     String name;
