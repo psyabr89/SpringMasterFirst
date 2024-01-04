@@ -15,7 +15,6 @@ public class UsersController {
     private UsersRepository usersRepository;
     @GetMapping("getUser")
     public Users search(){
-
         return usersRepository.findByName("Grigoriy");
     }
     @GetMapping("newUser")
@@ -24,31 +23,16 @@ public class UsersController {
         usersRepository.save(user);
     }
     @GetMapping("editUser")
-    public void edit(){
+    public void editUser(){
         Users user = usersRepository.getReferenceById(1);
         user.setName("Grigoriy");
         usersRepository.save(user);
-
     }
 
-
-
-//    @GetMapping("start")
-//
-//    public void AddUsers(String name){
-//    }
-//    public void DeleteUsers(String name){
-//    }
-//
-//    public void SearchUsers(String name){
-//
-//    }
-//
-//    public void ChangeUsers(String name){
-//
-//    }
-//
-
-
+    @GetMapping("deleteUser")
+    public void deleteUser(String name){
+        String userName = usersRepository.findByName(String name);
+        usersRepository.deleteByName(userName);
+    }
 }
 

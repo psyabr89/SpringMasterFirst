@@ -15,14 +15,7 @@ import ru.lex.mirelwedding.Repositories.AdminRepository;
 @Service
 @RequestMapping("startAdmin")
 public class AdminController {
-//    @Service
-//    public class YourService {
-//        private final YourEntityRepository yourEntityRepository;
-//
-//
-//
-//        // ... остальные методы сервиса
-//    }
+
         private AdminRepository adminRepository;
         @GetMapping("getAdmin")
         public Admin SearchAdmin(String name){
@@ -45,10 +38,9 @@ public class AdminController {
 
     @Autowired
     public void DeleteAdmin(AdminRepository adminRepository){
-
             this.adminRepository = adminRepository;
-        Admin admin;
-        adminRepository.save(admin);
+            Admin admin = new Admin();
+            adminRepository.save(admin);
 
     }
 
