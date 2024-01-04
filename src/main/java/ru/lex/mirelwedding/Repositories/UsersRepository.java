@@ -5,5 +5,8 @@ import ru.lex.mirelwedding.Entities.Users;
 
 public interface UsersRepository extends JpaRepository<Users,Integer> {
     Users findByName(String name);
-//    Users findByName(Integer age);
+
+    void deleteByName(String userName);
+
+
 }
